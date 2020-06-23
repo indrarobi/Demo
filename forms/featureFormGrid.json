@@ -4,82 +4,116 @@
         "className": "org.joget.apps.form.model.Section",
         "elements": [{
             "className": "org.joget.apps.form.model.Column",
-            "elements": [{
-                "className": "org.joget.plugin.enterprise.FormGrid",
-                "properties": {
-                    "abortRelatedRunningProcesses": "",
-                    "deleteFiles": "true",
-                    "deleteGridData": "true",
-                    "deleteMessage": "Delete row?",
-                    "deleteSubformData": "",
-                    "disabledAdd": "",
-                    "disabledDelete": "",
-                    "enableSorting": "",
-                    "errorMessage": "Invalid number of rows",
-                    "formDefId": "gridForm",
-                    "height": "60%",
-                    "id": "FG",
-                    "label": "",
-                    "loadBinder": {
-                        "className": "org.joget.plugin.enterprise.MultirowFormBinder",
-                        "properties": {
-                            "foreignKey": "fk",
-                            "formDefId": "gridForm"
-                        }
-                    },
-                    "options": [
-                        {
-                            "format": "",
-                            "formatType": "text",
-                            "label": "Name",
-                            "value": "name",
-                            "width": ""
+            "elements": [
+                {
+                    "className": "org.joget.plugin.enterprise.FormGrid",
+                    "properties": {
+                        "abortRelatedRunningProcesses": "",
+                        "deleteFiles": "true",
+                        "deleteGridData": "true",
+                        "deleteMessage": "Delete row?",
+                        "deleteSubformData": "",
+                        "disabledAdd": "",
+                        "disabledDelete": "",
+                        "enableSorting": "",
+                        "errorMessage": "Invalid number of rows",
+                        "formDefId": "gridForm",
+                        "height": "60%",
+                        "id": "FG",
+                        "label": "",
+                        "loadBinder": {
+                            "className": "org.joget.plugin.enterprise.MultirowFormBinder",
+                            "properties": {
+                                "foreignKey": "fk",
+                                "formDefId": "gridForm"
+                            }
                         },
-                        {
-                            "format": "",
-                            "formatType": "text",
-                            "label": "Select",
-                            "value": "select",
-                            "width": ""
+                        "options": [
+                            {
+                                "format": "",
+                                "formatType": "text",
+                                "label": "Name",
+                                "value": "name",
+                                "width": ""
+                            },
+                            {
+                                "format": "",
+                                "formatType": "text",
+                                "label": "Select",
+                                "value": "select",
+                                "width": ""
+                            },
+                            {
+                                "format": "",
+                                "formatType": "text",
+                                "label": "Date",
+                                "value": "date",
+                                "width": ""
+                            },
+                            {
+                                "format": "",
+                                "formatType": "text",
+                                "label": "File",
+                                "value": "file",
+                                "width": ""
+                            }
+                        ],
+                        "pageSize": "20",
+                        "readonly": "",
+                        "readonlyLabel": "",
+                        "showRowNumber": "",
+                        "storeBinder": {
+                            "className": "org.joget.plugin.enterprise.MultirowFormBinder",
+                            "properties": {
+                                "foreignKey": "fk",
+                                "formDefId": "gridForm"
+                            }
                         },
-                        {
-                            "format": "",
-                            "formatType": "text",
-                            "label": "Date",
-                            "value": "date",
-                            "width": ""
+                        "submit-label-normal": "",
+                        "submit-label-readonly": "",
+                        "uniqueKey": "",
+                        "validateMaxRow": "",
+                        "validateMinRow": "",
+                        "validator": {
+                            "className": "",
+                            "properties": {}
                         },
-                        {
-                            "format": "",
-                            "formatType": "text",
-                            "label": "File",
-                            "value": "file",
-                            "width": ""
-                        }
-                    ],
-                    "pageSize": "20",
-                    "readonly": "",
-                    "readonlyLabel": "",
-                    "showRowNumber": "",
-                    "storeBinder": {
-                        "className": "org.joget.plugin.enterprise.MultirowFormBinder",
-                        "properties": {
-                            "foreignKey": "fk",
-                            "formDefId": "gridForm"
-                        }
-                    },
-                    "submit-label-normal": "",
-                    "submit-label-readonly": "",
-                    "uniqueKey": "",
-                    "validateMaxRow": "",
-                    "validateMinRow": "",
-                    "validator": {
-                        "className": "",
-                        "properties": {}
-                    },
-                    "width": "60%"
+                        "width": "60%"
+                    }
+                },
+                {
+                    "className": "org.joget.apps.form.lib.Radio",
+                    "properties": {
+                        "controlField": "",
+                        "id": "field2",
+                        "label": "Radio",
+                        "options": [],
+                        "optionsBinder": {
+                            "className": "",
+                            "properties": {}
+                        },
+                        "readonly": "",
+                        "readonlyLabel": "",
+                        "validator": {
+                            "className": "",
+                            "properties": {}
+                        },
+                        "value": "",
+                        "workflowVariable": ""
+                    }
+                },
+                {
+                    "className": "org.joget.apps.form.lib.TextArea",
+                    "properties": {
+                        "cols": "20",
+                        "id": "field3",
+                        "label": "TextArea",
+                        "readonly": "False",
+                        "readonlyLabel": "False",
+                        "rows": "5"
+                    }
                 }
-            }],
+            ],
             "properties": {"width": "100%"}
         }],
         "properties": {
