@@ -44,6 +44,27 @@
                             "value": "Faster, simpler digital transformation. Joget's low-code/no-code platform makes it faster and easier to \u200bbuild enterprise applications and automate processes.",
                             "workflowVariable": ""
                         }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.TextField",
+                        "properties": {
+                            "encryption": "",
+                            "id": "new",
+                            "label": "New",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "readonly": "",
+                            "readonlyLabel": "",
+                            "size": "",
+                            "storeNumeric": "",
+                            "style": "",
+                            "validator": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "value": "",
+                            "workflowVariable": ""
+                        }
                     }
                 ],
                 "properties": {"width": "49%"}
